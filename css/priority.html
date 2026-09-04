@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="priority.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Priotity</h1>
+        <ol>
+            <!-- Không có sự ưu tiên giữa 2 cách này css nào mới hơn thì nhận cái đó -->
+            <li>Inter, Exter</li> 
+            <!-- Số điểm ưu tiên 4 cách -->
+            <li>Inline - 1000</li>
+            <li>#id - 100</li>
+            <li>.class - 10</li>
+            <li>tag - 1</li>
+            <!-- Ví dụ # = 100 nhưng # và . thì 110 sẽ ưu tiên -->
+            <li>Equal specificity</li>
+            <!-- * và html -->
+            <li>Universal selector and inherited</li>
+            <!-- ưu tiên đặc biệt -->
+            <li>!important</li>
+        </ol>
+    </div>
+</body>
+</html>

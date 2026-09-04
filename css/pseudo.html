@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* có thể cộng trừ nhân chia */
+            width: 100%;
+            height: 120px;
+            background-color: rgb(121, 64, 64);
+        }
+
+        h1:active {
+            color: aquamarine;
+        }
+
+        .box::before {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+
+        .box::after {
+            content: "Xin chào";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+
+        h1::first-letter {
+            font-size: 50px;
+        }
+
+        h1::first-line {
+            font-size: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div>
+        <h1>CSS Pseudo-classes</h1>
+        <ul>
+            <!-- tham chiếu đến chính phần tử gốc trong file html -->
+            <li>:root</li>
+            <!-- di chuột -->
+            <li>:hover</li>
+            <!-- bấm và giữ chuột -->
+            <li>:active</li>
+            <!-- Ví dụ lấy tag li thì cái đầu và cái cuối đổi màu -->
+            <!-- margin đầu cuối trong thanh menu bị dư, có thể sử dụng -->
+            <li>:first-child</li>
+            <li>:last-child</li>
+        </ul>
+    </div>
+    <div>
+        <h1>CSS Pseudo-elements <br /> Dòng thứ 2</h1>
+        <ul>
+            <li>::before</li>
+            <li>::after</li>
+            <li>::first-letter</li>
+            <li>::first-line</li>
+            <!-- tô đen dòng -->
+            <li>::selection</li>
+        </ul>
+    </div>
+</body>
+
+</html>

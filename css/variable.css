@@ -1,0 +1,18 @@
+:root{
+    --text-color: green;
+    /* Dạng global */
+}
+/* Đặt biến chỉ cần sửa 1 chỗ nếu sử dụng nhiều chỗ */
+
+h1{
+    color: var(--text-color);
+    /* Dạng local */
+}
+
+h2{
+    color: var(--text-color);
+}
+
+h3{
+    color: var(--text-color);
+}

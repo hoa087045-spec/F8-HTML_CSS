@@ -1,0 +1,29 @@
+* {
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+}
+
+/**
+* Mở tab TRÌNH DUYỆT và thử thay đổi
+* giá trị font-size ở đây để khám phá bạn nhé.
+*
+* Nếu bạn thắc mắc về con số 62.5% thì nãy đọc
+* giải thích bên tab NỘI DUNG nhé.
+*/
+html {
+    font-size: 80%;
+}
+
+#heading {
+    font-size: 2rem;
+}
+
+.sub-heading {
+    font-size: 1.6rem;
+}
+
+.text, ol li {
+    font-size: 1.4rem;
+}
+
+/* thay vì dùng px sẽ phải sửa từng chữ */

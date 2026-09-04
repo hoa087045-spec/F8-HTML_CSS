@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* có thể cộng trừ nhân chia */
+            width: calc(120px);
+            height: 120px;
+            background-color: rgb(121, 64, 64);
+        }
+
+        .box::after {
+            /* content: "Xin chào các bạn"; */
+            content: attr(data-title);
+        }
+
+        /* lớp giả thêm content */
+        a::after {
+            content: "(" attr(href)")";
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" data-title="ĐÂY LÀ CÁI BOX"></div>
+    <a href="https://fullstack.edu.vn">Học lập trình</a>
+    <div>
+        <h1>CSS Functions</h1>
+        <ul>
+            <li>var()</li>
+            <li>linear-gradient()</li>
+            <!-- a tạo màu trong suốt -->
+            <li>rgba()</li>
+            <li>rgb()</li>
+            <!-- tính toán -->
+            <li>calc()</li>
+            <li>attr()</li>
+        </ul>
+    </div>
+</body>
+
+</html>
